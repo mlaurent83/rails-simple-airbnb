@@ -8,9 +8,9 @@
       <h5 class="card-title"><%= flat.name %></h5>
       <p class="card-text"><%= flat.description %></p>
       <p class="card-text"><%= number_to_currency(flat.price_per_night) %> per night</p>
-      <a href="<%= flat_path(flat) %>" class="btn btn-primary">View Details</a>
-      <a href="<%= edit_flat_path(flat) %>" class="btn btn-primary">Edit</a>
-      <%= link_to 'Delete', flat_path(flat), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-primary' %>
+       <%= link_to 'View Details', flat_path(flat), class: 'btn btn-primary' %>
+        <%= link_to 'Edit', edit_flat_path(flat), class: 'btn btn-primary' %>
+        <%= link_to 'Delete', flat_path(flat), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-primary' %>
     </div>
       </div>
 <% end %>
